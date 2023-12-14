@@ -89,6 +89,7 @@
                     <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="188099479415594" type="Loading" />
             </actions>
         </event-block>
     </events>
