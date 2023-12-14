@@ -11,6 +11,7 @@
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -47,7 +48,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="TombolQuit3" sid="498168527140074">
+            <object-type name="Tombol_Quit" sid="498168527140074">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825096782072958" speed="5">
@@ -62,7 +63,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="TombolPlay2" sid="139360680613665">
+            <object-type name="Tombol_Play" sid="139360680613665">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160366897708711" speed="5">
@@ -104,52 +105,22 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="TombolOptions" sid="729782773333287">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512741031290486" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Tombol Options.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TombolPlay" sid="648230963525728">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626731982637749" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Play.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TombolQuit" sid="316004379080627">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="260235304110278" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Quit.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.1" />
-                            <point x="0.725556" y="0.5" />
-                            <point x="0.5" y="0.853333" />
-                            <point x="0.308889" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TombolQuit2" sid="283998597515109">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913576398518351" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Quit.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.1" />
-                            <point x="0.725556" y="0.5" />
-                            <point x="0.5" y="0.853333" />
-                            <point x="0.308889" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="Door">
+            <object-type name="Lantai" sid="527903209012003">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\SpriteFont_BitPap_Medium_(80)_[1,0,1,1]_71x85.png" />
+            </object-type>
+            <object-type name="Posisi" sid="924098607421913">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\SpriteFont_BitPap_Medium_(80)_[1,0,1,1]_71x85.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Free">
+            <object-type name="SpriteFont" sid="818053686906343">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\FontHitam80.png" />
+            </object-type>
+        </object-folder>
         <object-type name="Background_Battle2" sid="568099455753065">
             <plugin id="Sprite" />
             <animation-folder>
@@ -171,10 +142,13 @@
     <layout-folder>
         <layout>Main_Menu.xml</layout>
         <layout>Battle.xml</layout>
+        <layout>Door.xml</layout>
+        <layout>Free.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Main_Menu.xml</event-sheet>
         <event-sheet>Battle.xml</event-sheet>
+        <event-sheet>Door.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
