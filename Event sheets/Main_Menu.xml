@@ -74,6 +74,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="717520055344651" type="Loading">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="625400182820476" type="Loading" />
                 <action id="-16" name="Wait" sid="738275311811036" type="System">
                     <param id="0" name="Seconds">1.0</param>
