@@ -10,10 +10,16 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -78,6 +84,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Function" sid="127993698367335">
+                <plugin id="Function" />
+            </object-type>
+            <object-type global="1" name="Array" sid="547412253472601">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Battle">
             <object-type name="Dialog" sid="899752958660408">
@@ -90,6 +102,11 @@
             </object-type>
             <object-type name="Icon_Frame" sid="138666948092955">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pathfinding" sid="927161290187291">
+                        <behavior id="Pathfinding" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193833264031876" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Icon_Frame.png" />
@@ -103,6 +120,18 @@
                         <frame duration="1" hotspotX="0.501235" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Stat_Box.png" />
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="Background" sid="708957895505087">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914583672387245" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpriteFont2" sid="845047746653692">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
             </object-type>
         </object-folder>
         <object-folder name="Door">
@@ -121,21 +150,11 @@
                 <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\FontHitam80.png" />
             </object-type>
         </object-folder>
-        <object-type name="Background_Battle2" sid="568099455753065">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772719278875207" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background_Battle.png" />
-                </animation>
-            </animation-folder>
+        <object-type name="AJAX" sid="575702776837807">
+            <plugin id="AJAX" />
         </object-type>
-        <object-type name="Background" sid="708957895505087">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914583672387245" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
-                </animation>
-            </animation-folder>
+        <object-type name="Mouse" sid="125947226402568">
+            <plugin id="Mouse" />
         </object-type>
     </object-folder>
     <families />
@@ -150,7 +169,11 @@
         <event-sheet>Battle.xml</event-sheet>
         <event-sheet>Door.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="AJAX" uid="19" />
+        <global-instance type="Mouse" uid="20" />
+        <global-instance type="Function" uid="17" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
@@ -162,5 +185,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="bank_soal.txt" />
     </files-folder>
 </c2project>
