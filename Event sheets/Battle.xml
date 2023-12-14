@@ -2,5 +2,94 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle</name>
-    <events />
+    <events>
+        <variable constant="0" name="random_angka" sid="911148140621191" static="0" type="number">0</variable>
+        <variable constant="0" name="jawaban" sid="381578330619060" static="0" type="text">&quot;&quot;</variable>
+        <variable constant="0" name="nomer_soal" sid="309535274504496" static="0" type="number">0</variable>
+        <variable constant="0" name="timer" sid="119082029843691" static="0" type="number">0</variable>
+        <event-block sid="311535322703310">
+            <conditions>
+                <condition id="0" name="On function" sid="801058412144522" type="Function">
+                    <param id="0" name="Name">&quot;UrutanSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="681415599869485" type="UrutanSoal">
+                    <param id="0" name="Width">Total</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="579044405405599">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="405489774293644" type="System">
+                            <param id="0" name="Count">Total</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="733071579705017" type="UrutanSoal">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">loopindex</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="837925324459564">
+            <conditions>
+                <condition id="0" name="On function" sid="212110782574084" type="Function">
+                    <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="390189780822359" type="System">
+                    <param id="0" name="Variable">random_angka</param>
+                    <param id="1" name="Value">int(random(0,UrutanSoal.Width))</param>
+                </action>
+                <action id="-9" name="Set value" sid="332142907602784" type="System">
+                    <param id="0" name="Variable">nomer_soal</param>
+                    <param id="1" name="Value">UrutanSoal.At(random_angka)</param>
+                </action>
+                <action id="0" name="Set text" sid="960605563001998" type="tQuiz">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomer_soal),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="456937447534063" type="tAnswer1">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomer_soal),1,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="174924993337098" type="tAnswer2">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomer_soal),2,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="649161937752160" type="tAnswer3">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomer_soal),3,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="873026845847634" type="tAnswer4">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomer_soal),4,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="572678969796349" type="System">
+                    <param id="0" name="Variable">jawaban</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(nomer_soal),5,&quot;;&quot;))</param>
+                </action>
+                <action id="9" name="Delete" sid="339959094945696" type="UrutanSoal">
+                    <param id="0" name="Index">random_angka</param>
+                    <param id="1" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="428060777228425">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="122254349757404" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="393971258372161" type="Function">
+                    <param id="0" name="Name">&quot;UrutanSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="956759026552861" type="Function">
+                    <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

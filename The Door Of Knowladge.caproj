@@ -13,9 +13,9 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
@@ -46,14 +46,6 @@
     </configuration-settings>
     <object-folder>
         <object-folder name="Main_Menu">
-            <object-type name="BackgroundMenu" sid="524367990922323">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937010392321414" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\BackgroundMenu.jpg" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="Tombol_Quit" sid="498168527140074">
                 <plugin id="Sprite" />
                 <animation-folder>
@@ -84,15 +76,20 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Function" sid="127993698367335">
-                <plugin id="Function" />
-            </object-type>
             <object-type global="1" name="Array" sid="547412253472601">
                 <plugin id="Arr" />
             </object-type>
+            <object-type name="BackgroundMenu" sid="524367990922323">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937010392321414" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\BackgroundMenu.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Battle">
-            <object-type name="Dialog" sid="899752958660408">
+            <object-type name="oDialog" sid="899752958660408">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182213112347675" speed="5">
@@ -100,7 +97,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Icon_Frame" sid="138666948092955">
+            <object-type name="oIcon_Frame" sid="138666948092955">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Pathfinding" sid="927161290187291">
@@ -113,7 +110,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Stat_Box" sid="459086502970661">
+            <object-type name="oStat_Box" sid="459086502970661">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944333655470336" speed="5">
@@ -129,7 +126,26 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="SpriteFont2" sid="845047746653692">
+            <object-type name="tQuiz" sid="845047746653692">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type global="1" name="UrutanSoal" sid="189128789647367">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="tAnswer1" sid="870624259573060">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type name="tAnswer2" sid="868540103806159">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type name="tAnswer3" sid="970827214620763">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type name="tAnswer4" sid="904294528813693">
                 <plugin id="SpriteFontPlus" />
                 <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
             </object-type>
@@ -153,8 +169,11 @@
         <object-type name="AJAX" sid="575702776837807">
             <plugin id="AJAX" />
         </object-type>
-        <object-type name="Mouse" sid="125947226402568">
-            <plugin id="Mouse" />
+        <object-type name="Function" sid="127993698367335">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Touch" sid="973787359475662">
+            <plugin id="Touch" />
         </object-type>
     </object-folder>
     <families />
@@ -171,8 +190,12 @@
     </event-folder>
     <global-instances>
         <global-instance type="AJAX" uid="19" />
-        <global-instance type="Mouse" uid="20" />
         <global-instance type="Function" uid="17" />
+        <global-instance type="Touch" uid="28">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

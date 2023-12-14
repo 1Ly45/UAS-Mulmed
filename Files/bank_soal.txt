@@ -5,12 +5,12 @@ C.Rp.115.500,00;
 D.Rp.112.500,00;
 D.Rp.112.500,00;
 |
-Diketahui 5(x + 3) – 25 = 3(4x – 1). Nilai dari x – 1 adalah;
-A. –2;
-B. –1;
+Diketahui 5(x + 3) - 25 = 3(4x - 1). Nilai dari x - 1 adalah;
+A. -2;
+B. -1;
 C. 0;
 D. 2;
-A. –2;
+A. -2;
 |
 Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam 6 hari. Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut dapat selesai dalam waktu;
 A. 5 hari;
@@ -26,9 +26,9 @@ C. 2 2/3;
 D. 3 19/3;
 B. 2 1/9;
 |
-Diketahui f(x) = (3x – 2)(x + 1), nilai dari f(–2) adalah;
+Diketahui f(x) = (3x - 2)(x + 1), nilai dari f(-2) adalah;
 A. 8;
 B. 4;
-C. –4;
-D. –8;
+C. -4;
+D. -8;
 A. 8;

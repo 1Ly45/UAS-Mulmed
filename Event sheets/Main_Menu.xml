@@ -62,5 +62,17 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="157779157219059">
+            <conditions>
+                <condition id="3" name="On touched object" sid="800931719967585" type="Touch">
+                    <param id="0" name="Object">Tombol_Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="181468788018154" type="System">
+                    <param id="0" name="Layout">Battle</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
