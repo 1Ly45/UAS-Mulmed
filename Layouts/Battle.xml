@@ -157,7 +157,7 @@
             <instances />
             <effects />
         </layer>
-        <layer name="Layer 0" sid="558862204377539">
+        <layer name="Button" sid="558862204377539">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
