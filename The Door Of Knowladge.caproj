@@ -38,14 +38,72 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="BackgroundMenu" sid="524367990922323">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937010392321414" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\BackgroundMenu.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="Main_Menu">
+            <object-type name="BackgroundMenu" sid="524367990922323">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937010392321414" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\BackgroundMenu.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TombolQuit3" sid="498168527140074">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825096782072958" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Quit.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.1" />
+                                <point x="0.725556" y="0.5" />
+                                <point x="0.5" y="0.853333" />
+                                <point x="0.308889" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TombolPlay2" sid="139360680613665">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160366897708711" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Play.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.1" />
+                                <point x="0.725556" y="0.5" />
+                                <point x="0.5" y="0.853333" />
+                                <point x="0.308889" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Battle">
+            <object-type name="Dialog" sid="899752958660408">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182213112347675" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Dialog.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Icon_Frame" sid="138666948092955">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193833264031876" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Icon_Frame.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Stat_Box" sid="459086502970661">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944333655470336" speed="5">
+                        <frame duration="1" hotspotX="0.501235" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Stat_Box.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TombolOptions" sid="729782773333287">
             <plugin id="Sprite" />
             <animation-folder>
@@ -92,33 +150,19 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TombolPlay2" sid="139360680613665">
+        <object-type name="Background_Battle2" sid="568099455753065">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160366897708711" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Play.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.1" />
-                            <point x="0.725556" y="0.5" />
-                            <point x="0.5" y="0.853333" />
-                            <point x="0.308889" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772719278875207" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background_Battle.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TombolQuit3" sid="498168527140074">
+        <object-type name="Background" sid="708957895505087">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825096782072958" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Kampus\Semester 3\Mulmed\Hasil Export\Button\Tombol Quit.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.1" />
-                            <point x="0.725556" y="0.5" />
-                            <point x="0.5" y="0.853333" />
-                            <point x="0.308889" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914583672387245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -126,9 +170,11 @@
     <families />
     <layout-folder>
         <layout>Main_Menu.xml</layout>
+        <layout>Battle.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Main_Menu.xml</event-sheet>
+        <event-sheet>Battle.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
