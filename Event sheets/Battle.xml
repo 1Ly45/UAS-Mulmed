@@ -97,6 +97,21 @@
                 <action id="-5" name="Set width" sid="477086105220526" type="Health">
                     <param id="0" name="Width">MC_Health*105</param>
                 </action>
+                <action id="4" name="Set animation" sid="606170687656909" type="MC">
+                    <param id="0" name="Animation">&quot;C_Ready&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="985683633751847" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="833403311911073" type="MC">
+                    <param id="0" name="Animation">&quot;C_Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="874410847467681" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">30</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="818837566627401">
@@ -116,6 +131,14 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="425679975974566" type="MC">
+                            <param id="0" name="Animation">&quot;C_Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="340590293082007" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
                         <action id="-16" name="Wait" sid="760265741224140" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
@@ -158,26 +181,64 @@
                         <condition id="-22" name="Else" sid="621192106908922" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="998678651187001" type="System">
-                            <param id="0" name="Variable">MC_Health</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-9" name="Set value" sid="316300503637217" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="504539380986743" type="Enemy">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="317896770524265" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="536724322377696" type="Enemy">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="517299052769881" type="System">
                             <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="-5" name="Set width" sid="943297180479030" type="Health">
-                            <param id="0" name="Width">MC_Health * 105</param>
                         </action>
                         <action id="0" name="Call function" sid="993983086956739" type="Function">
                             <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="0" name="Set text" sid="705821645572828" type="Hint2">
-                            <param id="0" name="Text">MC_Health</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="973699948532448">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="652483762945622" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="440063840163447" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">30</param>
+                </action>
+                <action id="4" name="Set animation" sid="399201321200993" type="Enemy">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="944634550741745" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="678169694975108" type="Enemy">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="801622687002512" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="556341374532420" type="Function">
+                    <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="526164250726893">
             <conditions>
@@ -252,6 +313,90 @@
                 </action>
                 <action id="-1" name="Set X" sid="101745051007328" type="Time_Bar">
                     <param id="0" name="X">Self.X - 4.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155688057862913">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="745950538843746" type="System">
+                    <param id="0" name="Variable">MC_Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="522011872618680" type="gammeover_background">
+                    <param id="0" name="X">940</param>
+                    <param id="1" name="Y">390</param>
+                </action>
+                <action id="-3" name="Set position" sid="657716021706003" type="gameover">
+                    <param id="0" name="X">550</param>
+                    <param id="1" name="Y">340</param>
+                </action>
+                <action id="-16" name="Wait" sid="372234066424118" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="836321204726596" type="Loading">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="699956168988482" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="543353505519608" type="System">
+                    <param id="0" name="Layout">Main_Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853251803303718">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="265296643415291" type="MC">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="674842129688826" type="MCProjectile">
+                    <param id="0" name="X">850</param>
+                    <param id="1" name="Y">590</param>
+                </action>
+                <action id="-16" name="Wait" sid="371858514411953" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="669224039755195" type="Enemy" />
+                <action id="-9" name="Destroy" sid="503388049552917" type="MCProjectile" />
+            </actions>
+        </event-block>
+        <event-block sid="888462986525609">
+            <conditions>
+                <condition id="4" name="On finished" sid="556182072325922" type="Enemy">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="981705753523616" type="Enemy">
+                    <param id="0" name="Object">projectile</param>
+                    <param id="1" name="Layer">4</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="205142204593722" type="projectile">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="479045209432380">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="914975958486025" type="projectile">
+                    <param id="0" name="Object">MC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="324205707538361" type="projectile" />
+                <action id="-11" name="Subtract from" sid="293489074758930" type="System">
+                    <param id="0" name="Variable">MC_Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="192761431670630" type="Health">
+                    <param id="0" name="Width">MC_Health*105</param>
                 </action>
             </actions>
         </event-block>
