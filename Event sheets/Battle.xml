@@ -3,10 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle</name>
     <events>
+        <variable constant="0" name="MC_Health" sid="671564506788770" static="0" type="number">3</variable>
         <variable constant="0" name="random_angka" sid="911148140621191" static="0" type="number">0</variable>
         <variable constant="0" name="jawaban" sid="381578330619060" static="0" type="text">&quot;&quot;</variable>
         <variable constant="0" name="nomer_soal" sid="309535274504496" static="0" type="number">0</variable>
-        <variable constant="0" name="timer" sid="119082029843691" static="0" type="number">0</variable>
+        <variable constant="0" name="timer" sid="119082029843691" static="0" type="number">30</variable>
         <event-block sid="311535322703310">
             <conditions>
                 <condition id="0" name="On function" sid="801058412144522" type="Function">
@@ -93,6 +94,165 @@
                     <param id="0" name="Fade-out time">1</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="188099479415594" type="Loading" />
+                <action id="-5" name="Set width" sid="477086105220526" type="Health">
+                    <param id="0" name="Width">MC_Health*105</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="818837566627401">
+            <conditions>
+                <condition id="0" name="On function" sid="175511818449261" type="Function">
+                    <param id="0" name="Name">&quot;CekJawaban&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="168444190738462">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="374779604845646" type="System">
+                            <param id="0" name="Variable">jawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="760265741224140" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="907342700197975" type="MC">
+                            <param id="0" name="X">2000</param>
+                            <param id="1" name="Y">585</param>
+                        </action>
+                        <action behavior="Pathfinding" id="14" name="Set speed" sid="544095446578390" type="MC">
+                            <param id="0" name="Speed">400</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="523017046309873" type="MC" />
+                        <action id="4" name="Set animation" sid="200153421881558" type="MC">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="577478779193475" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action behavior="Fade" id="2" name="Set fade-in time" sid="596798691138186" type="Loading">
+                            <param id="0" name="Fade-in time">1</param>
+                        </action>
+                        <action behavior="Fade" id="4" name="Set fade-out time" sid="415958180525778" type="Loading">
+                            <param id="0" name="Fade-out time">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="259004839792691" type="Loading" />
+                        <action id="-10" name="Add to" sid="183091058468355" type="System">
+                            <param id="0" name="Variable">numFloor</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="441077632688856" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="407638550400269" type="System">
+                            <param id="0" name="Layout">Door</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="928714138106922">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="621192106908922" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="998678651187001" type="System">
+                            <param id="0" name="Variable">MC_Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="517299052769881" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="943297180479030" type="Health">
+                            <param id="0" name="Width">MC_Health * 105</param>
+                        </action>
+                        <action id="0" name="Call function" sid="993983086956739" type="Function">
+                            <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="705821645572828" type="Hint2">
+                            <param id="0" name="Text">MC_Health</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="526164250726893">
+            <conditions>
+                <condition id="3" name="On touched object" sid="565284905573231" type="Touch">
+                    <param id="0" name="Object">tAnswer1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="586733847991161" type="Function">
+                    <param id="0" name="Name">&quot;CekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">tAnswer1.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="750494093182802">
+            <conditions>
+                <condition id="3" name="On touched object" sid="488708837642586" type="Touch">
+                    <param id="0" name="Object">tAnswer2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="395680437769319" type="Function">
+                    <param id="0" name="Name">&quot;CekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">tAnswer2.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="268615179000085">
+            <conditions>
+                <condition id="3" name="On touched object" sid="740070924323400" type="Touch">
+                    <param id="0" name="Object">tAnswer3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="938990530159066" type="Function">
+                    <param id="0" name="Name">&quot;CekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">tAnswer3.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="357103407609834">
+            <conditions>
+                <condition id="3" name="On touched object" sid="786371120792369" type="Touch">
+                    <param id="0" name="Object">tAnswer4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="753459176050748" type="Function">
+                    <param id="0" name="Name">&quot;CekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">tAnswer4.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="813466513835078">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="957090971149788" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="380355584915603" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="137237192041677" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="356996163846222" type="Time_Bar">
+                    <param id="0" name="Width">timer * 8.5</param>
+                </action>
+                <action id="-1" name="Set X" sid="101745051007328" type="Time_Bar">
+                    <param id="0" name="X">Self.X - 4.25</param>
+                </action>
             </actions>
         </event-block>
     </events>

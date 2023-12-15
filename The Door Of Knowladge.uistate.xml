@@ -12,12 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Main_Menu</layout>
         <layout order="1">Battle</layout>
-        <layout order="2">Door</layout>
-        <layout order="6">Empty</layout>
-        <event-sheet order="3">Door</event-sheet>
-        <event-sheet active="1" order="4">Battle</event-sheet>
-        <event-sheet order="5">Main_Menu</event-sheet>
-        <event-sheet order="7">Empty</event-sheet>
+        <layout order="6">Door</layout>
+        <layout order="7">Empty</layout>
+        <event-sheet order="2">Battle</event-sheet>
+        <event-sheet order="3">Main_Menu</event-sheet>
+        <event-sheet order="4">Empty</event-sheet>
+        <event-sheet active="1" order="5">Door</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,9 +30,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Main_Menu/" />
         <folder expanded="0" path="object-folder/Battle/" />
-        <folder expanded="1" path="object-folder/Door/" />
+        <folder expanded="0" path="object-folder/Door/" />
         <folder expanded="0" path="object-folder/Free/" />
-        <folder expanded="1" path="object-folder/Empty/" />
+        <folder expanded="0" path="object-folder/Empty/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -45,6 +45,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/oDialog/" />
         <folder expanded="1" path="animation-folder/oIcon_Frame/" />
         <folder expanded="1" path="animation-folder/oStat_Box/" />
+        <folder expanded="1" path="animation-folder/Timer/" />
+        <folder expanded="1" path="animation-folder/Time_Bar/" />
         <folder expanded="1" path="animation-folder/LantaiBackground/" />
         <folder expanded="1" path="animation-folder/Door1/" />
         <folder expanded="1" path="animation-folder/Door2/" />

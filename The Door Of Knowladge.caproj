@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
@@ -141,6 +142,33 @@
             <object-type name="tAnswer4" sid="904294528813693">
                 <plugin id="SpriteFontPlus" />
                 <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type name="Timer" sid="984658674527849">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345630133560600" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="D:\GameGokil\Aset\PngAsset\Timer.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.285714" />
+                                <point x="0.909091" y="0.285714" />
+                                <point x="1" y="0.495238" />
+                                <point x="0.909091" y="0.714286" />
+                                <point x="0.5" y="0.714286" />
+                                <point x="0" y="1" />
+                                <point x="0.069697" y="0.495238" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Time_Bar" sid="397639989620890">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217183695006935" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Door">
@@ -557,6 +585,14 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Health" sid="187142389563373">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\GameGokil\Aset\PngAsset\Hearth.png" />
+        </object-type>
+        <object-type name="EmptyHealth" sid="570084218466505">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\GameGokil\Aset\PngAsset\Hearth_Empty.png" />
         </object-type>
     </object-folder>
     <families />
