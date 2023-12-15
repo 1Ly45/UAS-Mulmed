@@ -503,78 +503,34 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="669792552327042" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\1 MC Idle.png">
-                        <collision-poly>
-                            <point x="0.2" y="0.181818" />
-                            <point x="0.5" y="0.0227273" />
-                            <point x="0.7" y="0.272727" />
-                            <point x="0.7" y="0.5" />
-                            <point x="0.775" y="0.795455" />
-                            <point x="0.5" y="0.977273" />
-                            <point x="0.125" y="0.886364" />
-                            <point x="0.2" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\2 MC Idle.png">
-                        <collision-poly>
-                            <point x="0.2" y="0.181818" />
-                            <point x="0.5" y="0.0454545" />
-                            <point x="0.7" y="0.272727" />
-                            <point x="0.7" y="0.5" />
-                            <point x="0.775" y="0.795455" />
-                            <point x="0.5" y="0.977273" />
-                            <point x="0.125" y="0.886364" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\3 MC Idle.png">
-                        <collision-poly>
-                            <point x="0.2" y="0.181818" />
-                            <point x="0.5" y="0.0454545" />
-                            <point x="0.7" y="0.272727" />
-                            <point x="0.7" y="0.5" />
-                            <point x="0.75" y="0.772727" />
-                            <point x="0.5" y="0.977273" />
-                            <point x="0.125" y="0.886364" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\4 MC Idle.png">
-                        <collision-poly>
-                            <point x="0.2" y="0.181818" />
-                            <point x="0.5" y="0.0227273" />
-                            <point x="0.7" y="0.272727" />
-                            <point x="0.7" y="0.5" />
-                            <point x="0.75" y="0.772727" />
-                            <point x="0.5" y="0.977273" />
-                            <point x="0.125" y="0.886364" />
-                            <point x="0.2" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Idle\1 MC Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Idle\2 MC Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Idle\3 MC Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Idle\4 MC Idle.png" />
                 </animation>
                 <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="251879149026219" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Run\1 MC Run.png">
-                        <collision-poly>
-                            <point x="0.45" y="0.409091" />
-                            <point x="0.5" y="0.0681818" />
-                            <point x="0.925" y="0.0681818" />
-                            <point x="0.825" y="0.5" />
-                            <point x="0.725" y="0.75" />
-                            <point x="0.5" y="0.931818" />
-                            <point x="0.15" y="0.863636" />
-                            <point x="0.4" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Run\2 MC Run.png">
-                        <collision-poly>
-                            <point x="0.425" y="0.386364" />
-                            <point x="0.5" y="0.113636" />
-                            <point x="0.875" y="0.113636" />
-                            <point x="0.825" y="0.5" />
-                            <point x="0.725" y="0.75" />
-                            <point x="0.5" y="0.977273" />
-                            <point x="0.1" y="0.909091" />
-                            <point x="0.425" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Run\1 MC Run.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Normal Run\2 MC Run.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="C_Ready" pingpong="0" repeatcount="1" repeatto="0" sid="433340653132041" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Ready\1 MC Attack Ready.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Ready\2 MC Attack Ready.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Ready\3 MC Attack Ready.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Ready\4 MC Attack Ready.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="C_Attack" pingpong="0" repeatcount="1" repeatto="0" sid="859714142785225" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\1 MC Attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\2 MC Attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\3 MC Attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\4 MC Attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\5 MC Attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\6 MC Attack.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="C_Idle" pingpong="0" repeatcount="1" repeatto="0" sid="904748235465652" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\1 MC Attack Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\2 MC Attack Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\3 MC Attack Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\4 MC Attack Idle.png" />
                 </animation>
             </animation-folder>
         </object-type>
