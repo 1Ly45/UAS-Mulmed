@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Empty</name>
+    <events>
+        <event-block sid="562448166757739">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="359310594667802" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="354622649528546" type="Loading">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="837999872913140" type="Loading" />
+                <action id="-16" name="Wait" sid="619501512192085" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="871639458589452" type="MC">
+                    <param id="0" name="X">2000</param>
+                    <param id="1" name="Y">585</param>
+                </action>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="967112919190353" type="MC">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="496700927251991" type="MC" />
+                <action id="4" name="Set animation" sid="519225956448931" type="MC">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="958492197382945" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="751104381536916" type="Loading">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="360680239444340" type="Loading">
+                    <param id="0" name="Fade-out time">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="813759259363858" type="Loading" />
+                <action id="-10" name="Add to" sid="134603774302741" type="System">
+                    <param id="0" name="Variable">numFloor</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="279268211794711" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="503709226518500" type="System">
+                    <param id="0" name="Layout">Door</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

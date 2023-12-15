@@ -119,14 +119,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Background" sid="708957895505087">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914583672387245" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="tQuiz" sid="845047746653692">
                 <plugin id="SpriteFontPlus" />
                 <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
@@ -160,11 +152,296 @@
                 <plugin id="SpriteFontPlus" />
                 <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\SpriteFont_BitPap_Medium_(80)_[1,0,1,1]_71x85.png" />
             </object-type>
+            <object-type name="LantaiBackground" sid="390555224306527">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550189146155304" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Door1" sid="618389902390933">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="numOfDoor" sid="361930917281322" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="6" loop="0" name="Open" pingpong="0" repeatcount="0" repeatto="0" sid="537202110237426" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door1.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door2.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door3.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door4.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door5.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Close" pingpong="0" repeatcount="1" repeatto="0" sid="171974815818328" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Hint" sid="973596901094530">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
+            </object-type>
+            <object-type name="Door2" sid="576245806175099">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="numOfDoor" sid="576091295496715" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="6" loop="0" name="Open" pingpong="0" repeatcount="0" repeatto="0" sid="239776183966272" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door1.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door2.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door3.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door4.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door5.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Close" pingpong="0" repeatcount="1" repeatto="0" sid="241143936313219" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Door3" sid="102904702447009">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="numOfDoor" sid="168726732708835" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="6" loop="0" name="Open" pingpong="0" repeatcount="0" repeatto="0" sid="890734951408723" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door1.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door2.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door3.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door4.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door5.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Close" pingpong="0" repeatcount="1" repeatto="0" sid="401362493654469" speed="5">
+                        <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Object\SpriteDoor\Door0.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.1" />
+                                <point x="0.498413" y="0" />
+                                <point x="0.857143" y="0.1" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Free">
             <object-type name="SpriteFont" sid="818053686906343">
                 <plugin id="SpriteFontPlus" />
                 <texture original-source="E:\Kampus\Semester 3\Mulmed\Font\FontHitam80.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Empty">
+            <object-type name="Hint2" sid="210186160668397">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\HP\Downloads\SpriteFont_Alkhemikal_Medium_(80)_[1,1,1,1]_59x70.png" />
             </object-type>
         </object-folder>
         <object-type name="AJAX" sid="575702776837807">
@@ -189,18 +466,111 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="MC" sid="137548087191466">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="832702376513937">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="669792552327042" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\1 MC Idle.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.181818" />
+                            <point x="0.5" y="0.0227273" />
+                            <point x="0.7" y="0.272727" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.775" y="0.795455" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.125" y="0.886364" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\2 MC Idle.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.7" y="0.272727" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.775" y="0.795455" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.125" y="0.886364" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\3 MC Idle.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.7" y="0.272727" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.75" y="0.772727" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.125" y="0.886364" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Idle\4 MC Idle.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.181818" />
+                            <point x="0.5" y="0.0227273" />
+                            <point x="0.7" y="0.272727" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.75" y="0.772727" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.125" y="0.886364" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="251879149026219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Run\1 MC Run.png">
+                        <collision-poly>
+                            <point x="0.45" y="0.409091" />
+                            <point x="0.5" y="0.0681818" />
+                            <point x="0.925" y="0.0681818" />
+                            <point x="0.825" y="0.5" />
+                            <point x="0.725" y="0.75" />
+                            <point x="0.5" y="0.931818" />
+                            <point x="0.15" y="0.863636" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\MC\Run\2 MC Run.png">
+                        <collision-poly>
+                            <point x="0.425" y="0.386364" />
+                            <point x="0.5" y="0.113636" />
+                            <point x="0.875" y="0.113636" />
+                            <point x="0.825" y="0.5" />
+                            <point x="0.725" y="0.75" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.1" y="0.909091" />
+                            <point x="0.425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="708957895505087">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914583672387245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Main_Menu.xml</layout>
         <layout>Battle.xml</layout>
+        <layout>Empty.xml</layout>
         <layout>Door.xml</layout>
-        <layout>Free.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Main_Menu.xml</event-sheet>
         <event-sheet>Battle.xml</event-sheet>
         <event-sheet>Door.xml</event-sheet>
+        <event-sheet>Empty.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="AJAX" uid="19" />
