@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
@@ -473,6 +474,71 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="BossDoor" sid="186023073045277">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="699924466809885" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\1 Boss Door.png">
+                            <collision-poly>
+                                <point x="0.0681818" y="0.0652174" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.943939" y="0.0536232" />
+                                <point x="0.909091" y="0.5" />
+                                <point x="0.977273" y="0.978261" />
+                                <point x="0.0227273" y="0.978261" />
+                                <point x="0.0909091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\2 Boss Door.png">
+                            <collision-poly>
+                                <point x="0.0681818" y="0.0652174" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.943939" y="0.0536232" />
+                                <point x="0.909091" y="0.5" />
+                                <point x="0.977273" y="0.978261" />
+                                <point x="0.0227273" y="0.978261" />
+                                <point x="0.0909091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\3 Boss Door.png">
+                            <collision-poly>
+                                <point x="0.0681818" y="0.0652174" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.943939" y="0.0536232" />
+                                <point x="0.909091" y="0.5" />
+                                <point x="0.977273" y="0.978261" />
+                                <point x="0.0227273" y="0.978261" />
+                                <point x="0.0909091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\4 Boss Door.png">
+                            <collision-poly>
+                                <point x="0.0681818" y="0.0652174" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.943939" y="0.0536232" />
+                                <point x="0.909091" y="0.5" />
+                                <point x="0.977273" y="0.978261" />
+                                <point x="0.0227273" y="0.978261" />
+                                <point x="0.0909091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\5 Boss Door.png">
+                            <collision-poly>
+                                <point x="0.0681818" y="0.0652174" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.943939" y="0.0536232" />
+                                <point x="0.909091" y="0.5" />
+                                <point x="0.977273" y="0.978261" />
+                                <point x="0.0227273" y="0.978261" />
+                                <point x="0.0909091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Closed" pingpong="0" repeatcount="1" repeatto="0" sid="988983879835322" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Boss Door\1 Boss Door.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Empty">
             <object-type name="Hint2" sid="210186160668397">
@@ -534,7 +600,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\5 MC Attack.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Attack\6 MC Attack.png" />
                 </animation>
-                <animation framecount="4" loop="0" name="C_Idle" pingpong="0" repeatcount="1" repeatto="0" sid="904748235465652" speed="5">
+                <animation framecount="4" loop="1" name="C_Idle" pingpong="0" repeatcount="1" repeatto="0" sid="904748235465652" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\1 MC Attack Idle.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\2 MC Attack Idle.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\MC\Combat Idle\3 MC Attack Idle.png" />
@@ -616,7 +682,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453626861563177" speed="5">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453626861563177" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton\Projectile\1 Enemy 2 Projectile.png">
                         <collision-poly>
                             <point x="0.166667" y="0.166667" />
@@ -644,11 +710,231 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="NewLogo" sid="322589128654396">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604914324185573" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Logo Game\New Logo.png">
+                        <collision-poly>
+                            <point x="0.0933333" y="0.217778" />
+                            <point x="0.942857" y="0.133333" />
+                            <point x="0.957143" y="0.5" />
+                            <point x="0.928571" y="0.833333" />
+                            <point x="0.5" y="0.851111" />
+                            <point x="0.106667" y="0.751111" />
+                            <point x="0.0933333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Boss" sid="900059236403104">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="727041357818178" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="702636771360447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Idle\1 Boss 2 Idle.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0952381" />
+                            <point x="0.650667" y="0.415873" />
+                            <point x="0.790667" y="0.5" />
+                            <point x="0.82" y="0.785714" />
+                            <point x="0.5" y="0.880952" />
+                            <point x="0.210667" y="0.749206" />
+                            <point x="0.38" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Idle\2 Boss 2 Idle.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.107937" />
+                            <point x="0.650667" y="0.415873" />
+                            <point x="0.790667" y="0.5" />
+                            <point x="0.82" y="0.785714" />
+                            <point x="0.5" y="0.880952" />
+                            <point x="0.210667" y="0.749206" />
+                            <point x="0.38" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Idle\3 Boss 2 Idle.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.107937" />
+                            <point x="0.649333" y="0.41746" />
+                            <point x="0.78" y="0.5" />
+                            <point x="0.830667" y="0.798413" />
+                            <point x="0.5" y="0.893651" />
+                            <point x="0.209333" y="0.750794" />
+                            <point x="0.38" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Idle\4 Boss 2 Idle.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0952381" />
+                            <point x="0.650667" y="0.415873" />
+                            <point x="0.790667" y="0.5" />
+                            <point x="0.82" y="0.785714" />
+                            <point x="0.5" y="0.880952" />
+                            <point x="0.210667" y="0.749206" />
+                            <point x="0.38" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="292841820670871" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Attack\1 Boss 2 attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Attack\2 Boss 2 attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Attack\3 Boss 2 attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Attack\4 Boss 2 attack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Skeleton Boss\Attack\5 Boss 2 attack.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Api" sid="508001344583562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432907603359482" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api1.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.15" />
+                            <point x="0.5" y="0.188333" />
+                            <point x="0.6" y="0.2" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api2.png">
+                        <collision-poly>
+                            <point x="0.226667" y="0.113333" />
+                            <point x="0.5" y="0.213333" />
+                            <point x="0.923333" y="0.0383333" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api3.png">
+                        <collision-poly>
+                            <point x="0.326667" y="0.163333" />
+                            <point x="0.5" y="0.0883333" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Api2" sid="750816725175334">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670896534224292" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api1.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.15" />
+                            <point x="0.5" y="0.188333" />
+                            <point x="0.6" y="0.2" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api2.png">
+                        <collision-poly>
+                            <point x="0.226667" y="0.113333" />
+                            <point x="0.5" y="0.213333" />
+                            <point x="0.923333" y="0.0383333" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\Api3.png">
+                        <collision-poly>
+                            <point x="0.326667" y="0.163333" />
+                            <point x="0.5" y="0.0883333" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.5" y="0.738333" />
+                            <point x="0.45" y="0.775" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ApiDinding" sid="141327303004403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534293502525366" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\ApiDinding1.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.15" />
+                            <point x="0.5" y="0.188333" />
+                            <point x="0.6" y="0.2" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.626667" y="0.813333" />
+                            <point x="0.5" y="0.938333" />
+                            <point x="0.376667" y="0.811667" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\ApiDinding2.png">
+                        <collision-poly>
+                            <point x="0.226667" y="0.113333" />
+                            <point x="0.5" y="0.213333" />
+                            <point x="0.923333" y="0.0383333" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.626667" y="0.813333" />
+                            <point x="0.5" y="0.938333" />
+                            <point x="0.376667" y="0.811667" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameGokil\Aset\PngAsset\Api\ApiDinding3.png">
+                        <collision-poly>
+                            <point x="0.326667" y="0.163333" />
+                            <point x="0.5" y="0.0883333" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.876667" y="0.5" />
+                            <point x="0.626667" y="0.813333" />
+                            <point x="0.5" y="0.938333" />
+                            <point x="0.376667" y="0.811667" />
+                            <point x="0.126667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="555056401492724">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Door" plugin-id="Sprite" sid="960342274099071">
+            <members>
+                <member>Door1</member>
+                <member>Door2</member>
+                <member>Door3</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Main_Menu.xml</layout>
         <layout>Battle.xml</layout>
+        <layout>Boss_Battle.xml</layout>
         <layout>Empty.xml</layout>
         <layout>Door.xml</layout>
     </layout-folder>
@@ -657,6 +943,7 @@
         <event-sheet>Battle.xml</event-sheet>
         <event-sheet>Door.xml</event-sheet>
         <event-sheet>Empty.xml</event-sheet>
+        <event-sheet>Boss_Battle.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="AJAX" uid="19" />
@@ -680,10 +967,19 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="76" />
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="Y2meta.app-Something-being-hit-Sound-Effect-_128-kbps_.ogg" />
+        <file name="Hit.ogg" />
+        <file name="MC_Attack.ogg" />
+        <file name="Run.ogg" />
+        <file name="BG_Battle.ogg" />
+        <file name="BG_MainMenu.ogg" />
+        <file name="Clik1.ogg" />
+        <file name="DoorOpen.ogg" />
+        <file name="GameOver.ogg" />
+        <file name="Win1.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

@@ -3,9 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Main_Menu</name>
     <events>
-        <variable constant="0" name="opa" sid="239603700126788" static="0" type="number">0</variable>
         <variable constant="0" name="index" sid="391629841289492" static="0" type="number">0</variable>
-        <variable constant="0" name="Total" sid="729178032354654" static="0" type="number">5</variable>
+        <variable constant="0" name="Total" sid="729178032354654" static="0" type="number">10</variable>
         <event-block sid="240070627490850">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="723731491317174" type="System" />
@@ -15,17 +14,24 @@
                     <param id="0" name="Variable">index</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="-9" name="Set value" sid="365018881438263" type="System">
-                    <param id="0" name="Variable">opa</param>
-                    <param id="1" name="Value">0</param>
+                <action id="-9" name="Set value" sid="475956857202171" type="System">
+                    <param id="0" name="Variable">numFloor</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="449792328457772" type="System">
+                    <param id="0" name="Variable">MC_Health</param>
+                    <param id="1" name="Value">3</param>
                 </action>
                 <action id="1" name="Request project file" sid="690779581133528" type="AJAX">
                     <param id="0" name="Tag">&quot;load bank soal&quot;</param>
                     <param id="1" name="File">bank_soal.txt</param>
                 </action>
-                <action id="-9" name="Set value" sid="449792328457772" type="System">
-                    <param id="0" name="Variable">MC_Health</param>
-                    <param id="1" name="Value">3</param>
+                <action id="33" name="Stop all" sid="975658920146658" type="Audio" />
+                <action id="0" name="Play" sid="414113635802257" type="Audio">
+                    <param id="0" name="Audio file">BG_MainMenu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -82,12 +88,35 @@
                     <param id="0" name="Fade-in time">1</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="625400182820476" type="Loading" />
+                <action id="0" name="Play" sid="475106873683295" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-16" name="Wait" sid="738275311811036" type="System">
                     <param id="0" name="Seconds">1.0</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="259144558803853" type="System">
                     <param id="0" name="Layout">Door</param>
                 </action>
+                <action id="33" name="Stop all" sid="482039043268064" type="Audio" />
+                <action id="0" name="Play" sid="696033326372353" type="Audio">
+                    <param id="0" name="Audio file">BG_Battle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347719813723276">
+            <conditions>
+                <condition id="3" name="On touched object" sid="564132258953913" type="Touch">
+                    <param id="0" name="Object">Tombol_Quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="235320995050297" type="Browser" />
             </actions>
         </event-block>
     </events>

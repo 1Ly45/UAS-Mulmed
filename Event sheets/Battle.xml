@@ -46,7 +46,7 @@
             <actions>
                 <action id="-9" name="Set value" sid="390189780822359" type="System">
                     <param id="0" name="Variable">random_angka</param>
-                    <param id="1" name="Value">int(random(0,UrutanSoal.Width))</param>
+                    <param id="1" name="Value">int(random(0,10))</param>
                 </action>
                 <action id="-9" name="Set value" sid="332142907602784" type="System">
                     <param id="0" name="Variable">nomer_soal</param>
@@ -70,10 +70,6 @@
                 <action id="-9" name="Set value" sid="572678969796349" type="System">
                     <param id="0" name="Variable">jawaban</param>
                     <param id="1" name="Value">trim(tokenat(Array.At(nomer_soal),5,&quot;;&quot;))</param>
-                </action>
-                <action id="9" name="Delete" sid="339959094945696" type="UrutanSoal">
-                    <param id="0" name="Index">random_angka</param>
-                    <param id="1" name="Axis">0</param>
                 </action>
             </actions>
         </event-block>
@@ -112,6 +108,9 @@
                     <param id="0" name="Variable">timer</param>
                     <param id="1" name="Value">30</param>
                 </action>
+                <action id="-1" name="Set X" sid="862635848593906" type="Time_Bar">
+                    <param id="0" name="X">215</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="818837566627401">
@@ -138,6 +137,9 @@
                         <action id="-9" name="Set value" sid="340590293082007" type="System">
                             <param id="0" name="Variable">timer</param>
                             <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="693714946493076" type="Time_Bar">
+                            <param id="0" name="X">215</param>
                         </action>
                         <action id="-16" name="Wait" sid="760265741224140" type="System">
                             <param id="0" name="Seconds">2</param>
@@ -175,6 +177,23 @@
                             <param id="0" name="Layout">Door</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="249090078359067">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="672275617332386" type="System">
+                                    <param id="0" name="Variable">MC_Health</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="822337429986712" type="Function">
+                                    <param id="0" name="Name">&quot;gameover&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="928714138106922">
                     <conditions>
@@ -184,6 +203,9 @@
                         <action id="-9" name="Set value" sid="316300503637217" type="System">
                             <param id="0" name="Variable">timer</param>
                             <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="406520762457553" type="Time_Bar">
+                            <param id="0" name="X">215</param>
                         </action>
                         <action id="4" name="Set animation" sid="504539380986743" type="Enemy">
                             <param id="0" name="Animation">&quot;Attack&quot;</param>
@@ -204,6 +226,23 @@
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="374980145059480">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="369928050896911" type="System">
+                                    <param id="0" name="Variable">MC_Health</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="517697602807387" type="Function">
+                                    <param id="0" name="Name">&quot;gameover&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -219,6 +258,9 @@
                 <action id="-9" name="Set value" sid="440063840163447" type="System">
                     <param id="0" name="Variable">timer</param>
                     <param id="1" name="Value">30</param>
+                </action>
+                <action id="-1" name="Set X" sid="120227895907156" type="Time_Bar">
+                    <param id="0" name="X">215</param>
                 </action>
                 <action id="4" name="Set animation" sid="399201321200993" type="Enemy">
                     <param id="0" name="Animation">&quot;Attack&quot;</param>
@@ -239,6 +281,23 @@
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="734078056182790">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="179631128179747" type="System">
+                            <param id="0" name="Variable">MC_Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="307251717631724" type="Function">
+                            <param id="0" name="Name">&quot;gameover&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="526164250726893">
             <conditions>
@@ -250,6 +309,12 @@
                 <action id="0" name="Call function" sid="586733847991161" type="Function">
                     <param id="0" name="Name">&quot;CekJawaban&quot;</param>
                     <param id="1" name="Parameter {n}">tAnswer1.Text</param>
+                </action>
+                <action id="0" name="Play" sid="218351502121607" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -264,6 +329,12 @@
                     <param id="0" name="Name">&quot;CekJawaban&quot;</param>
                     <param id="1" name="Parameter {n}">tAnswer2.Text</param>
                 </action>
+                <action id="0" name="Play" sid="153702142672616" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="268615179000085">
@@ -277,6 +348,12 @@
                     <param id="0" name="Name">&quot;CekJawaban&quot;</param>
                     <param id="1" name="Parameter {n}">tAnswer3.Text</param>
                 </action>
+                <action id="0" name="Play" sid="910084749379160" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="357103407609834">
@@ -289,6 +366,12 @@
                 <action id="0" name="Call function" sid="753459176050748" type="Function">
                     <param id="0" name="Name">&quot;CekJawaban&quot;</param>
                     <param id="1" name="Parameter {n}">tAnswer4.Text</param>
+                </action>
+                <action id="0" name="Play" sid="785576030013472" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -316,37 +399,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="155688057862913">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="745950538843746" type="System">
-                    <param id="0" name="Variable">MC_Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="522011872618680" type="gammeover_background">
-                    <param id="0" name="X">940</param>
-                    <param id="1" name="Y">390</param>
-                </action>
-                <action id="-3" name="Set position" sid="657716021706003" type="gameover">
-                    <param id="0" name="X">550</param>
-                    <param id="1" name="Y">340</param>
-                </action>
-                <action id="-16" name="Wait" sid="372234066424118" type="System">
-                    <param id="0" name="Seconds">2</param>
-                </action>
-                <action behavior="Fade" id="4" name="Set fade-out time" sid="836321204726596" type="Loading">
-                    <param id="0" name="Fade-out time">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="699956168988482" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="543353505519608" type="System">
-                    <param id="0" name="Layout">Main_Menu</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="853251803303718">
             <conditions>
                 <condition id="3" name="Compare frame" sid="265296643415291" type="MC">
@@ -358,6 +410,12 @@
                 <action id="-3" name="Set position" sid="674842129688826" type="MCProjectile">
                     <param id="0" name="X">850</param>
                     <param id="1" name="Y">590</param>
+                </action>
+                <action id="0" name="Play" sid="716241660897035" type="Audio">
+                    <param id="0" name="Audio file">MC_Attack</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="371858514411953" type="System">
                     <param id="0" name="Seconds">0.5</param>
@@ -391,12 +449,54 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="324205707538361" type="projectile" />
+                <action id="0" name="Play" sid="645934171165710" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-11" name="Subtract from" sid="293489074758930" type="System">
                     <param id="0" name="Variable">MC_Health</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-5" name="Set width" sid="192761431670630" type="Health">
                     <param id="0" name="Width">MC_Health*105</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="794942246106185">
+            <conditions>
+                <condition id="0" name="On function" sid="805335927895740" type="Function">
+                    <param id="0" name="Name">&quot;gameover&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="568141739285196" type="gammeover_background">
+                    <param id="0" name="X">940</param>
+                    <param id="1" name="Y">390</param>
+                </action>
+                <action id="-3" name="Set position" sid="533623857421899" type="gameover">
+                    <param id="0" name="X">550</param>
+                    <param id="1" name="Y">340</param>
+                </action>
+                <action id="33" name="Stop all" sid="790040092193545" type="Audio" />
+                <action id="0" name="Play" sid="893753856546364" type="Audio">
+                    <param id="0" name="Audio file">GameOver</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="438753310999679" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="695636652403111" type="Loading">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="684721247514159" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="268410584574479" type="System">
+                    <param id="0" name="Layout">Main_Menu</param>
                 </action>
             </actions>
         </event-block>

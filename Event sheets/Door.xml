@@ -27,11 +27,17 @@
         </event-block>
         <event-block sid="545313134977888">
             <conditions>
-                <condition id="4" name="Is touching object" sid="373737367311937" type="Touch">
+                <condition id="3" name="On touched object" sid="373737367311937" type="Touch">
                     <param id="0" name="Object">Door1</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="917196130305541" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action behavior="Pathfinding" id="14" name="Set speed" sid="478829948218289" type="MC">
                     <param id="0" name="Speed">400</param>
                 </action>
@@ -44,112 +50,261 @@
                     <param id="0" name="Animation">&quot;Run&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="0" name="Play" sid="624813876155698" type="Audio">
+                    <param id="0" name="Audio file">Run</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;run&quot;</param>
+                </action>
                 <action id="-16" name="Wait" sid="489473309414976" type="System">
-                    <param id="0" name="Seconds">3</param>
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="6" name="Stop" sid="174432087506506" type="Audio">
+                    <param id="0" name="Tag">&quot;run&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="290590717266016" type="Door1">
                     <param id="0" name="Animation">&quot;Open&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="0" name="Play" sid="344479366218286" type="Audio">
+                    <param id="0" name="Audio file">DoorOpen</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="979859677948237">
+        <event-block sid="294668620222253">
             <conditions>
-                <condition id="4" name="Is touching object" sid="903417772229851" type="Touch">
+                <condition id="3" name="On touched object" sid="141434223063437" type="Touch">
                     <param id="0" name="Object">Door2</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="14" name="Set speed" sid="509725880117750" type="MC">
+                <action id="0" name="Play" sid="959179569540805" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="900248619454004" type="MC">
                     <param id="0" name="Speed">400</param>
                 </action>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="870284234004007" type="MC">
+                <action behavior="Pathfinding" id="0" name="Find path" sid="845112895950375" type="MC">
                     <param id="0" name="X">1200</param>
                     <param id="1" name="Y">585</param>
                 </action>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="888203602740815" type="MC" />
-                <action id="4" name="Set animation" sid="777573628190975" type="MC">
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="674125391242413" type="MC" />
+                <action id="4" name="Set animation" sid="912118105544815" type="MC">
                     <param id="0" name="Animation">&quot;Run&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="395960790190533" type="System">
-                    <param id="0" name="Seconds">5</param>
+                <action id="0" name="Play" sid="378523365291176" type="Audio">
+                    <param id="0" name="Audio file">Run</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;run&quot;</param>
                 </action>
-                <action id="4" name="Set animation" sid="317068046877501" type="Door2">
+                <action id="-16" name="Wait" sid="137500984180164" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="6" name="Stop" sid="497836532389656" type="Audio">
+                    <param id="0" name="Tag">&quot;run&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="439493258568306" type="Door2">
                     <param id="0" name="Animation">&quot;Open&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="0" name="Play" sid="314784551179142" type="Audio">
+                    <param id="0" name="Audio file">DoorOpen</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="185532760875087">
+        <event-block sid="530753274164060">
             <conditions>
-                <condition id="4" name="Is touching object" sid="341315759824307" type="Touch">
+                <condition id="3" name="On touched object" sid="509345176249548" type="Touch">
                     <param id="0" name="Object">Door3</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="14" name="Set speed" sid="396068038837063" type="MC">
+                <action id="0" name="Play" sid="431811682729715" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="461623132027810" type="MC">
                     <param id="0" name="Speed">400</param>
                 </action>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="147095797123577" type="MC">
+                <action behavior="Pathfinding" id="0" name="Find path" sid="864808519909060" type="MC">
                     <param id="0" name="X">1600</param>
                     <param id="1" name="Y">585</param>
                 </action>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="633561233254769" type="MC" />
-                <action id="4" name="Set animation" sid="431605356449146" type="MC">
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="265236397603550" type="MC" />
+                <action id="4" name="Set animation" sid="957150381239475" type="MC">
                     <param id="0" name="Animation">&quot;Run&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="619836350247291" type="System">
-                    <param id="0" name="Seconds">7</param>
+                <action id="0" name="Play" sid="420983660845762" type="Audio">
+                    <param id="0" name="Audio file">Run</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;run&quot;</param>
                 </action>
-                <action id="4" name="Set animation" sid="305762038810201" type="Door3">
+                <action id="-16" name="Wait" sid="528330489547000" type="System">
+                    <param id="0" name="Seconds">3.5</param>
+                </action>
+                <action id="6" name="Stop" sid="806087272168382" type="Audio">
+                    <param id="0" name="Tag">&quot;run&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="167523715703502" type="Door3">
                     <param id="0" name="Animation">&quot;Open&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="942153962108238" type="Audio">
+                    <param id="0" name="Audio file">DoorOpen</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="792185257333815">
             <conditions>
                 <condition behavior="Pathfinding" id="5" name="On arrived" sid="484094380067536" type="MC" />
-                <condition id="-14" name="Compare variable" sid="474984946481160" type="System">
-                    <param id="0" name="Variable">random_angka</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="927494269504146" type="MC">
                     <param id="0" name="Animation">&quot;Idle&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="665838763464767" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="438108338600852" type="System">
-                    <param id="0" name="Layout">Battle</param>
-                </action>
             </actions>
         </event-block>
-        <event-block sid="448537474039601">
+        <event-block sid="127142878056606">
             <conditions>
-                <condition behavior="Pathfinding" id="5" name="On arrived" sid="770035523009278" type="MC" />
-                <condition id="-14" name="Compare variable" sid="324715976096015" type="System">
-                    <param id="0" name="Variable">random_angka</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
+                <condition id="-14" name="Compare variable" sid="609228584871433" type="System">
+                    <param id="0" name="Variable">numFloor</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">10</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="956175501746358" type="MC">
-                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                <action id="-9" name="Destroy" sid="738055149576134" type="Door1" />
+                <action id="-9" name="Destroy" sid="303553884368019" type="Door2" />
+                <action id="-9" name="Destroy" sid="419391635743241" type="Door3" />
+                <action id="-3" name="Set position" sid="945142317314309" type="BossDoor">
+                    <param id="0" name="X">1000</param>
+                    <param id="1" name="Y">330</param>
+                </action>
+                <action id="-3" name="Set position" sid="901807429401456" type="Api">
+                    <param id="0" name="X">575</param>
+                    <param id="1" name="Y">555</param>
+                </action>
+                <action id="-3" name="Set position" sid="904781407435346" type="Api2">
+                    <param id="0" name="X">1425</param>
+                    <param id="1" name="Y">555</param>
+                </action>
+                <action id="-9" name="Destroy" sid="575523987864139" type="ApiDinding" />
+                <action id="0" name="Set text" sid="185325227658058" type="Hint">
+                    <param id="0" name="Text">&quot;?????????&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="239462780748732">
+            <conditions>
+                <condition id="3" name="On touched object" sid="222217169661918" type="Touch">
+                    <param id="0" name="Object">BossDoor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="181526462123569" type="Audio">
+                    <param id="0" name="Audio file">Clik1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Pathfinding" id="14" name="Set speed" sid="237331824107218" type="MC">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="587192414364543" type="MC">
+                    <param id="0" name="X">1000</param>
+                    <param id="1" name="Y">585</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="302062119591280" type="MC" />
+                <action id="4" name="Set animation" sid="937458339920097" type="MC">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="213484901075128" type="System">
-                    <param id="0" name="Seconds">1</param>
+                <action id="0" name="Play" sid="679529371787692" type="Audio">
+                    <param id="0" name="Audio file">Run</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;run&quot;</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="493316153419172" type="System">
-                    <param id="0" name="Layout">Empty</param>
+                <action id="-16" name="Wait" sid="353165379831215" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="6" name="Stop" sid="402658192162669" type="Audio">
+                    <param id="0" name="Tag">&quot;run&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="534230376742851" type="BossDoor">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="163388836260914" type="Audio">
+                    <param id="0" name="Audio file">DoorOpen</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">40</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956151262847853">
+            <conditions>
+                <condition id="4" name="On finished" sid="507296535703446" type="Door">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="164873451878173">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="283930037515276" type="System">
+                            <param id="0" name="Variable">random_angka</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="574206888773619" type="System">
+                            <param id="0" name="Layout">Empty</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="707615075932860">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="498874214531820" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="961557388526499" type="System">
+                            <param id="0" name="Layout">Battle</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="260672898933131">
+            <conditions>
+                <condition id="4" name="On finished" sid="930791663476345" type="BossDoor">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="826428046739175" type="System">
+                    <param id="0" name="Layout">Boss_Battle</param>
                 </action>
             </actions>
         </event-block>

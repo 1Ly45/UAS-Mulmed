@@ -30,8 +30,17 @@
                     <param id="0" name="Animation">&quot;Run&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="0" name="Play" sid="358697323029252" type="Audio">
+                    <param id="0" name="Audio file">Run</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;run&quot;</param>
+                </action>
                 <action id="-16" name="Wait" sid="958492197382945" type="System">
                     <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="6" name="Stop" sid="318900712179231" type="Audio">
+                    <param id="0" name="Tag">&quot;run&quot;</param>
                 </action>
                 <action behavior="Fade" id="2" name="Set fade-in time" sid="751104381536916" type="Loading">
                     <param id="0" name="Fade-in time">1</param>
